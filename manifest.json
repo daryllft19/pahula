@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+
+	"name": "Pahula Plugin",
+	"description":  "Extension to be able to get charade items out of movie search results",
+	"version": "1.0",
+
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+	},
+
+	"content_scripts":[{
+		"css": ["pahula.css"],
+		"js": ["content.js"],
+		"matches": ["https://www.google.com.ph/*"]
+	}],
+
+	"permissions": [
+		"activeTab"
+	]
+	
+}
