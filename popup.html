@@ -1,14 +1,41 @@
 <!doctype html>
-<html>
+<html style="min-width:300px;">
 	<head>
 		<title>Pahula Plugin</title>
 		<script src="popup.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="jquery-3.1.1.min.js"></script>
+		<script src="bootstrap.min.js"></script>
 	</head>
 
 	<body>
-		<h1>Pahula</h1>
-		<button id="init">Initialize List</button>
-		<button id="next">Next</button>
+		<div class='container'>
+			<div class="row">
+				<h1>
+				Pahula
+				<img src="https://media.giphy.com/media/s3Zug4SSIPt6M/giphy.gif" class="img-circle" alt="Cinque Terre" width='100px'>
+				</h1>
+			</div>
+				
+			<div class="row">
+			
+			
+				<button id="init" class='btn btn-primary'>Initialize List</button>
+				<button id="next" class='btn btn-primary'>Get movie!</button>
+				<div id='init-success' class="alert alert-success">
+				  Successfully initialized <span id='items-success'></span> items!
+				</div>
+				<div id='init-danger' class="alert alert-danger">
+				  Nothing to initialize! Try searching movies in google.
+				</div>
+			</div>
+			<div class="row">
+				<h5><strong>Movie:  <span id ='guess' style='cursor: pointer;color: transparent;text-shadow: 0 0 10px #000;' title="Un-hover to blur!">N/A</span></strong></h5>
+			</div>
+			<div class="row bg-info">
+				<span id ='items'>0</span> items to guess.
+			</div>
+		</div>
 	</body>
 </html>
 
