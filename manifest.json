@@ -13,7 +13,7 @@
 	"content_scripts":[{
 		"css": ["pahula.css"],
 		"js": ["content.js"],
-		"matches": ["https://www.google.com.ph/*"]
+		"matches": ["https://*/*","http://*/*"]
 	}],
 
 	"permissions": [
